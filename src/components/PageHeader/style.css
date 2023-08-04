@@ -35,8 +35,22 @@
   display: flex;
   align-items: center;
 }
+
 .page-header-search-bar {
   display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #303030;
+  border-radius: 40px 0px 0px 40px;
+  height: 40px;
+  padding: 0 0 0 16px;
+  min-width: 546px;
+}
+
+.page-header-search-bar svg {
+  display: none;
+  width: 22px;
+  height: 22px;
 }
 
 .page-header-search-bar label {
@@ -54,7 +68,21 @@
   color: #fff;
 }
 
-.page-header-search-bar button {
+.close-search-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  display: none;
+}
+
+.close-search-button:hover {
+  background-color: #444;
+}
+
+.search-submit-button {
   background-color: #222;
   border-radius: 0 40px 40px 0;
   height: 40px;
@@ -62,8 +90,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #303030;
 }
 
-.page-header-search-bar button:hover {
-  border: 1px solid #303030;
+.search-by-voice {
+  margin-left: 12px;
+  border-radius: 50%;
+  background-color: #303030;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-by-voice:hover {
+  background-color: #444;
+}
+
+.page-header-second-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.page-header-second-section img {
+  border-radius: 100%;
 }
