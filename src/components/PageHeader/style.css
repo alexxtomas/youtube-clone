@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: space-between;
   margin-left: 1rem;
-  grid-column: span 25 / span 25;
   height: fit-content;
 }
 
@@ -130,6 +129,7 @@
   left: 360px;
   border-radius: 12px;
   padding: 8px 0;
+  z-index: 10;
 }
 
 .search-on-youtube-results li {
