@@ -3,17 +3,15 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  margin-left: 1rem;
+  grid-column: span 25 / span 25;
+  height: fit-content;
 }
 
 .page-header-first-section {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-}
-
-.page-header-first-section-guide-button {
-  width: 24px;
-  height: 24px;
 }
 
 .page-header-fist-section-youtube-button {
@@ -78,10 +76,6 @@
   display: none;
 }
 
-.close-search-button:hover {
-  background-color: #444;
-}
-
 .search-submit-button {
   background-color: #222;
   border-radius: 0 40px 40px 0;
@@ -93,10 +87,10 @@
   border: 1px solid #303030;
 }
 
-.search-by-voice {
-  margin-left: 12px;
+.search-by-voice,
+.bell-button,
+.video-camera-button {
   border-radius: 50%;
-  background-color: #303030;
   width: 40px;
   height: 40px;
   display: flex;
@@ -104,16 +98,79 @@
   justify-content: center;
 }
 
-.search-by-voice:hover {
-  background-color: #444;
+.search-by-voice {
+  margin-left: 12px;
+  background-color: #303030;
+}
+
+.search-by-voice:hover,
+.close-search-button:hover,
+.bell-button:hover,
+.video-camera-button:hover {
+  background-color: #272727;
 }
 
 .page-header-second-section {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .page-header-second-section img {
   border-radius: 100%;
+}
+
+.search-on-youtube-results {
+  display: none;
+  position: absolute;
+  width: 550px;
+  height: 250px;
+  background-color: #212121;
+  top: 53px;
+  left: 360px;
+  border-radius: 12px;
+  padding: 8px 0;
+}
+
+.search-on-youtube-results li {
+  width: 100%;
+  line-height: 32px;
+}
+
+.search-on-youtube-results li a:hover {
+  background-color: #303030;
+}
+
+.search-on-youtube-results li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 2px 8px;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-on-youtube-results li a div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 8px;
+}
+
+.search-on-youtube-results li a div span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+}
+.search-on-youtube-results li a button {
+  color: #3ea6ff;
+  font-size: 13px;
+  line-height: 100%;
+  margin-right: 8px;
+}
+
+.search-on-youtube-results li a button:hover {
+  text-decoration: underline;
 }

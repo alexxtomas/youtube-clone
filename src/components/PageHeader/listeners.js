@@ -5,15 +5,18 @@ export function PageHeaderListeners() {
   const $searchOnYoutube = $('#search-on-youtube')
   const $pageHeaderSearchBar = $('#search-on-youtube-container')
   const $closeSearchButton = $('#close-search-button')
+  const $searchOnYoutubeResults = $('#search-on-youtube-results')
 
   $searchOnYoutube.addEventListener('focus', () => {
     $searchOnYoutubeIcon.style.display = 'block'
     $pageHeaderSearchBar.style.border = '1px solid #3ea6ff'
+    $searchOnYoutubeResults.style.display = 'block'
   })
 
   $searchOnYoutube.addEventListener('blur', () => {
     $searchOnYoutubeIcon.style.display = 'none'
     $pageHeaderSearchBar.style.border = '1px solid #303030'
+    $searchOnYoutubeResults.style.display = 'none'
   })
 
   $searchOnYoutube.addEventListener('input', () => {

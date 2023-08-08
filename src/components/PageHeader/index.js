@@ -1,7 +1,7 @@
 import './style.css'
 import BellIcon from '@components/Icons/BellIcon'
 import CloseIcon from '@components/Icons/CloseIcon'
-import GuideIcon from '@components/Icons/GuideIcon'
+import HistoryIcon from '@components/Icons/HistoryIcon'
 import MicrophoneIcon from '@components/Icons/MicrophoneIcon'
 import SearchIcon from '@components/Icons/SearchIcon'
 import VideoCameraIcon from '@components/Icons/VideoCameraIcon'
@@ -11,9 +11,6 @@ const PageHeader = () => {
   return /* html */ `
   <header class="page-header">
   <section class="page-header-first-section">
-    <button class="page-header-first-section-guide-button">
-      ${GuideIcon()}
-    </button>
     <button class="page-header-fist-section-youtube-button">
       ${YoutubeIcon()}
     </button>
@@ -24,6 +21,45 @@ const PageHeader = () => {
     ${SearchIcon('id="search-on-youtube-icon"')}
     <label  for="search-on-youtube">Search what you want on Youtube</label>
     <input autocapitalize="none" autocomplete="off" autocorrect="off" tabindex="0" spellcheck="false" aria-label="Buscar" placeholder="Buscar" role="combobox" dir="ltr" type="text" id="search-on-youtube" name="search-on-youtube" />
+    <ul id="search-on-youtube-results" class="search-on-youtube-results">
+       <li>
+          <a>
+          <div>
+              ${HistoryIcon()}
+              <span>How to read</span>
+          </div>
+          <button>Eliminar</button>
+          </a>
+          
+       </li>
+       <li>
+       <a>
+       <div>
+           ${HistoryIcon()}
+           <span>How to read</span>
+       </div>
+       <button>Eliminar</button>
+       </a>
+       </li>
+       <li>
+       <a>
+       <div>
+           ${HistoryIcon()}
+           <span>How to read</span>
+       </div>
+       <button>Eliminar</button>
+       </a>
+       </li>
+       <li>
+       <a>
+       <div>
+           ${HistoryIcon()}
+           <span>How to read</span>
+       </div>
+       <button>Eliminar</button>
+       </a>
+       </li>
+    </ul>
     <button type="reset" id="close-search-button" class="close-search-button">
     ${CloseIcon()}
     </button>
@@ -32,19 +68,19 @@ const PageHeader = () => {
     ${SearchIcon()}
   </button>
     </section>
-    <button class="search-by-voice">
+    <button type="button" class="search-by-voice">
       ${MicrophoneIcon()}
     </button>
   </form>
   <section class="page-header-second-section">
-  <button>
+  <button class="video-camera-button">
   ${VideoCameraIcon()}
 
   </button>
-  <button>
+  <button class="bell-button">
   ${BellIcon()}
   </button>
-  <button>
+  <button class="avatar-button">
   <img id="img" draggable="false" class="style-scope yt-img-shadow" alt="Imagen del avatar" height="32" width="32" src="https://yt3.ggpht.com/yti/AOXPAcW7evHQYm_lmd1kvs3tqhW8nxLgiz1dSfP_5qEx-Q=s88-c-k-c0x00ffffff-no-rj">
   </button>
   </section>
