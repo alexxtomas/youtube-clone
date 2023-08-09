@@ -5,3 +5,12 @@ main {
   gap: 2rem;
   grid-column: span 25 / span 25;
 }
+
+.videos-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+  padding: 0 12rem;
+  margin: 0 auto;
+  gap: 1rem;
+}
