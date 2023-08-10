@@ -1,13 +1,11 @@
 import './style.css'
 import BellIcon from '@components/Icons/BellIcon'
-import CloseIcon from '@components/Icons/CloseIcon'
-import HistoryIcon from '@components/Icons/HistoryIcon'
 import MicrophoneIcon from '@components/Icons/MicrophoneIcon'
-import SearchIcon from '@components/Icons/SearchIcon'
 import VideoCameraIcon from '@components/Icons/VideoCameraIcon'
 import YoutubeIcon from '@components/Icons/YoutubeIcon'
+import SearchBar from '@components/SearchBar'
 
-const PageHeader = () => {
+const PageHeader = ({ results }) => {
   return /* html */ `
   <header class="page-header">
   <section class="page-header-first-section">
@@ -16,57 +14,7 @@ const PageHeader = () => {
     </button>
   </section>
   <form class="page-header-form">
-  <section class="page-header-search-input-section">
-    <div id="search-on-youtube-container" class="page-header-search-bar">
-    ${SearchIcon('id="search-on-youtube-icon"')}
-    <label  for="search-on-youtube">Search what you want on Youtube</label>
-    <input autocapitalize="none" autocomplete="off" autocorrect="off" tabindex="0" spellcheck="false" aria-label="Buscar" placeholder="Buscar" role="combobox" dir="ltr" type="text" id="search-on-youtube" name="search-on-youtube" />
-    <ul id="search-on-youtube-results" class="search-on-youtube-results">
-       <li>
-          <a>
-          <div>
-              ${HistoryIcon()}
-              <span>How to read</span>
-          </div>
-          <button>Eliminar</button>
-          </a>
-          
-       </li>
-       <li>
-       <a>
-       <div>
-           ${HistoryIcon()}
-           <span>How to read</span>
-       </div>
-       <button>Eliminar</button>
-       </a>
-       </li>
-       <li>
-       <a>
-       <div>
-           ${HistoryIcon()}
-           <span>How to read</span>
-       </div>
-       <button>Eliminar</button>
-       </a>
-       </li>
-       <li>
-       <a>
-       <div>
-           ${HistoryIcon()}
-           <span>How to read</span>
-       </div>
-       <button>Eliminar</button>
-       </a>
-       </li>
-    </ul>
-    <button type="reset" id="close-search-button" class="close-search-button">
-    ${CloseIcon()}
-    </button>
-    </div>
-    <button class="search-submit-button" type="submit">
-    ${SearchIcon()}
-  </button>
+      ${SearchBar({ results })}
     </section>
     <button type="button" class="search-by-voice">
       ${MicrophoneIcon()}
