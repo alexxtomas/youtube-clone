@@ -1,0 +1,54 @@
+.search-on-youtube-results {
+  display: none;
+  position: absolute;
+  width: 550px;
+  height: 250px;
+  background-color: #212121;
+  top: 45px;
+  left: 0;
+  border-radius: 12px;
+  padding: 8px 0;
+  z-index: 10;
+}
+
+.search-on-youtube-results li {
+  width: 100%;
+  line-height: 32px;
+}
+
+.search-on-youtube-results li a:hover {
+  background-color: #303030;
+}
+
+.search-on-youtube-results li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 2px 8px;
+  width: 100%;
+  color: #fff;
+}
+
+.search-on-youtube-results li a div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 8px;
+}
+
+.search-on-youtube-results li a div span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+}
+.search-on-youtube-results li a button {
+  color: #3ea6ff;
+  font-size: 13px;
+  line-height: 100%;
+  margin-right: 8px;
+}
+
+.search-on-youtube-results li a button:hover {
+  text-decoration: underline;
+}
