@@ -1,8 +1,8 @@
 import './style.css'
 
-const AsideLink = ({ icon, text }) => {
+const AsideLink = ({ href, icon, text }) => {
   return /* html */ `
-    <a class="aside-link">
+    <a href="${href}" class="aside-link">
       ${icon}
       <span>${text}</span>
     </a>
