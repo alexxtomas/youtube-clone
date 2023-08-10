@@ -3,14 +3,44 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  grid-column: span 25 / span 25;
+  grid-column: span 39 / span 39;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.page-content-section {
+  width: 100%;
 }
 
 .videos-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   width: 100%;
   padding: 0 12rem;
   margin: 0 auto;
   gap: 1rem;
+}
+
+@media (min-width: 1080px) {
+  .videos-layout {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1408px) {
+  .videos-layout {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1735px) {
+  .videos-layout {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 2060px) {
+  .videos-layout {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }
