@@ -13,6 +13,8 @@ body {
   font-family: 'Roboto', sans-serif;
   display: grid;
   grid-template-columns: repeat(40, minmax(0, 1fr));
+  overflow-x: hidden;
+  margin-bottom: 10rem;
 }
 
 button {

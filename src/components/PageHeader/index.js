@@ -9,9 +9,9 @@ const PageHeader = ({ results }) => {
   return /* html */ `
   <header class="page-header">
   <section class="page-header-first-section">
-    <button class="page-header-fist-section-youtube-button">
+    <a href="/" class="page-header-first-section-anchor">
       ${YoutubeIcon()}
-    </button>
+    </a>
   </section>
   <form class="page-header-form">
       ${SearchBar({ results })}

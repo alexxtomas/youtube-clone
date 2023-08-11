@@ -1,3 +1,4 @@
+import CheckMarkIcon from '@components/Icons/CheckMarkIcon'
 import './style.css'
 
 const VideoCard = ({
@@ -7,7 +8,8 @@ const VideoCard = ({
   title,
   chanelName,
   views,
-  date
+  date,
+  checkMark
 }) => {
   return /* html */ `
     <a href="#" class="video-card">
@@ -22,7 +24,11 @@ const VideoCard = ({
            </div>
         <div class="video-card-data">
         <h3>${title}</h3>
+           <div class="video-card-channelName-container">
            <p>${chanelName}</p>
+            ${checkMark ? CheckMarkIcon() : ''}
+             
+           </div>
            <div><span>${views}</span><span >${date}</span></div>
         </div>
       </section>

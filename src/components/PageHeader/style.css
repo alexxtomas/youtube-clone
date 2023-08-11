@@ -12,12 +12,12 @@
   gap: 1.5rem;
 }
 
-.page-header-fist-section-youtube-button {
+.page-header-first-section-anchor {
   width: 90px;
   height: 20px;
 }
 
-.page-header-fist-section-youtube-button svg,
+.page-header-first-section-anchor svg,
 .page-header-first-section-guide-button svg {
   width: 100%;
   height: 100%;

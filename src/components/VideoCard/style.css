@@ -55,6 +55,18 @@
   font-size: 14px;
 }
 
+.video-card-channelName-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.video-card-channelName-container svg {
+  width: 14px;
+  height: 14px;
+  margin-top: 4px;
+}
+
 .video-card-data span:last-of-type::before {
   content: '•';
   margin: 0 5px;
